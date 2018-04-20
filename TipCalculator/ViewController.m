@@ -15,6 +15,7 @@
 @property (weak, nonatomic) IBOutlet UIButton *calculateTip;
 @property (weak, nonatomic) IBOutlet UILabel *tipAmountLabel;
 
+@property (weak, nonatomic) IBOutlet UILabel *totalAmount;
 
 
 @end
@@ -25,7 +26,6 @@
     [super viewDidLoad];
     _billAmountTextField.placeholder=@"Bill Total";
     _tipPercentage.placeholder=@"Tip percentage";
-    
     
     
     self.billAmountTextField.keyboardType=UIKeyboardTypeNumberPad;
@@ -81,6 +81,8 @@
     self.tipAmountLabel.text = @([self.billAmountTextField.text floatValue] * [self.tipPercentage.text floatValue]*0.01).description;
     self.tipAmountLabel.text=[NSString stringWithFormat:@"%.2f",self.tipAmountLabel.text.floatValue];
     
+    
+    self.totalAmount.text=@(self.tipAmountLabel.text.floatValue + self.billAmountTextField.text.floatValue).description;
     
 }
 - (IBAction)adjustTipPercentage:(UISlider *)sender {

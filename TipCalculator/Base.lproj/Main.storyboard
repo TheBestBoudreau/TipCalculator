@@ -54,6 +54,13 @@
                                     <action selector="adjustTipPercentage:" destination="BYZ-38-t0r" eventType="valueChanged" id="6gy-h6-Mii"/>
                                 </connections>
                             </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Total:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OZR-Dh-Aef">
+                                <rect key="frame" x="103" y="427" width="174" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -63,6 +70,7 @@
                         <outlet property="calculateTip" destination="j6Z-Dm-LA5" id="C5z-c7-gZp"/>
                         <outlet property="tipAmountLabel" destination="NCv-fS-cFf" id="qvF-4n-r3t"/>
                         <outlet property="tipPercentage" destination="avG-Ug-Pd9" id="0MH-KP-wmm"/>
+                        <outlet property="totalAmount" destination="OZR-Dh-Aef" id="dY1-li-1Nz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
